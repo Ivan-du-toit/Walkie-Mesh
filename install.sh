@@ -19,6 +19,7 @@ echo "device found: "$device_found
 
 echo "Attempting to uninstall previous versions"
 adb -s $device_found  uninstall org.servalproject
+#adb -s $device_found  uninstall za.co.csir.walkiemesh
 
 echo "Installing new version"
-adb -s $device_found install serval/bin/batphone-debug.apk
+adb -s $device_found install batphone/bin/batphone-debug.apk
